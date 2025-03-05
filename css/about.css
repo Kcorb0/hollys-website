@@ -6,6 +6,11 @@
 }
 
 body {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
     background-color: white;
     font-family: Arial, sans-serif;
     color: #3F4045;
@@ -69,11 +74,17 @@ nav {
 
 /* MOBILE MENU BUTTON */
 #menu-toggle {
-    display: none;
+    display: none; /* Default: hidden on larger screens */
     font-size: 30px;
     color: white;
     cursor: pointer;
-    padding: 10px;
+    padding: 10px 20px;
+    position: fixed; /* Keeps it at the top while scrolling */
+    top: 10px; /* Stick it 10px from the top */
+    right: 20px; /* Position it on the right */
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    border-radius: 5px;
+    z-index: 1000; /* Ensures it stays on top */
 }
 
 /* MEDIA QUERIES FOR MOBILE */
@@ -84,16 +95,20 @@ nav {
         padding: 30px 0;
     }
 
+    #menu-toggle {
+        display: block; /* Show toggle button on mobile */
+    }
+
     #header-nav {
         flex-direction: column;
-        background: rgba(0, 0, 0, 0.8);
-        position: absolute;
-        top: 60px;
-        left: 0;
+        background: rgba(0, 0, 0, 0.9);
+        position: fixed;
+        top: 0px; /* Below the menu toggle */
+        right: 0;
         width: 100%;
-        display: none;
-        /* Initially hidden */
+        display: none; /* Hidden by default */
         padding: 10px 0;
+        z-index: 999;
     }
 
     #header-nav li {
