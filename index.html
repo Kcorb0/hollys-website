@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Holly-Sena McCan | Gallery</title>
+  <title>Holly-Sena McCan | Porfolio Gallery</title>
   <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -12,26 +12,62 @@
   <main>
     <div id="header">
       <h1>Holly-Sena McCann</h1>
-      <ul id="header-nav">
-        <li><a class="active-nav-link" href="index.html">Gallery</a></li>
-        <li><a href="pages/animation.html">Animation</a></li>
-        <li><a href="pages/about_me.html">About</a></li>
-        <li><a href="#Contact">Contact</a></li>
-      </ul>
+      <nav>
+          <div id="menu-toggle">&#9776;</div> <!-- Mobile menu icon -->
+          <ul id="header-nav">
+              <li><a class="active-nav-link" href="index.html">Portfolio & Gallery</a></li>
+              <li><a href="pages/about_me.html">About & Contact</a></li>
+          </ul>
+      </nav>
     </div>
+
     <div id="main-content">
-      <h2>Gallery</h2>
+      <h2>Porfolio & Gallery</h2>
       <div id="gallery-container">
-        <div class="image-box"><img src="./assets/images/life-drawing/thumbnail_IMG_E7634.jpg"></div>
-        <div class="image-box"><img src="./assets/images/life-drawing/thumbnail_IMG_8665.jpg"></div>
-        <div class="image-box"><img src="./assets/images/life-drawing/IMG_7400.jpg"></div>
-        <div class="image-box"><img src="./assets/images/life-drawing/thumbnail_IMG_7399.jpg"></div>
-        <div class="image-box"><img src="./assets/images/life-drawing/thumbnail_IMG_8666.jpg"></div>
-        <div class="image-box"><img src="./assets/images/life-drawing/IMG_7400.jpg"></div>
-        <div class="image-box"><img src="./assets/images/placeholders/3.jpg"></div>
-        <div class="image-box"><img src="./assets/images/placeholders/4.jpg"></div>
-        <div class="image-box"><img src="./assets/images/placeholders/5.jpg"></div>
-        <div class="image-box"><img src="./assets/images/placeholders/6.jpg"></div>
+        <div class="gallery-item">
+          <div class="image-box"><img src="./assets/images/Hollys Assets/Ink1.png"></div>
+          <div class="box-text">Left: ink and water on newsprint <br>Right: charcoal</div>
+        </div>
+
+        <div class="gallery-item">
+          <div class="image-box"><img src="./assets/images/Hollys Assets/Lino1.png"></div>
+          <div class="box-text">Lino sheet with block ink on bamboo paper</div>
+        </div>
+
+        <div class="gallery-item">
+          <div class="image-box"><img src="./assets/images/Hollys Assets/Pumkin1.png"></div>
+          <div class="box-text">Digital painting on TVPaint using oil paint brushes sized 1920 x 1080</div>
+        </div>
+
+        <div class="gallery-item">
+          <div class="image-box"><img src="./assets/images//Hollys Assets/Heron-animated.gif"></div>
+          <div class="box-text">100 x 100 soft lino 7 frames carved and inked ono bamboo paper then scanned and each frame placed on TVPaint and looped as an animation on 2 frames per second</div>
+        </div>
+
+        <div class="image-box">
+          <video controls>
+              <source src="./assets/videos/final.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+          </video>
+        </div>
+        <div class="box-text">Photoshop:digital painting of fashion models based on a collaboration project with textile students in my third year of university. The background is a nasa photo and all animation was done on After Effects to add a VHS effect. A reversible skirt that the textile students made so I animated it as a stop motion and took it to After Effects to add a photoshopped Tv and VHS effect on top. I took a live action video of some trees in the snow and again took it to after effects and added a VHS edit to it. The entire clip was composed in Premier Pro.</div>
+
+        <div class="image-box">
+            <video controls>
+                <source src="./assets/videos/final opening finished.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="box-text">This piece was made in photoshop so I drew each character/ item on its own layer and painted it all. Then I took it to After Effects and animated it with a camera pan down.</div>
+
+        <div class="image-box">
+          <video controls>
+              <source src="./assets/videos/Terry's Story Youth Realties Animated film V002 (1).mp4" type="video/mp4">
+              Your browser does not support the video tag.
+          </video>
+      </div>
+      <div class="box-text">Terry's Story Youth Realties Animated film V002</div>
+
       </div>
     </div>
     <footer>
@@ -40,5 +76,4 @@
   </main>
   <script src="./js/index.js"></script>
 </body>
-
 </html>

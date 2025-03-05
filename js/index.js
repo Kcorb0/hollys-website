@@ -14,3 +14,8 @@ const observer = new IntersectionObserver((entries, observer) => {
 imageBoxes.forEach(box => {
     observer.observe(box);
 });
+
+
+document.getElementById("menu-toggle").addEventListener("click", function() {
+    document.getElementById("header-nav").classList.toggle("active");
+});
